@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     int quantity = 1;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         boolean stateOfChocolateCheckBox = chocolateCheckBox.isChecked();
 
         EditText userNameEditText = findViewById(R.id.user_name_edit_text);
-        String userName = userNameEditText.getText().toString();
+        //      I concatenated the string text to the userName String
+        String userName = getString(R.string.email_subject) + " " + userNameEditText.getText().toString();
 
 //      Calculates the price of the order
         int price = calculatePrice(stateOfWhippedCreamCheckBox, stateOfChocolateCheckBox);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"kennethemmanuel28@gmail.com"});
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
-        intent.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.email_subject),userName);
+        intent.putExtra(Intent.EXTRA_SUBJECT,userName);
 
 
         if (intent.resolveActivity(getPackageManager()) != null) {
