@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"kennethemmanuel28@gmail.com"});
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         intent.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.email_subject),userName);
+
+
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
