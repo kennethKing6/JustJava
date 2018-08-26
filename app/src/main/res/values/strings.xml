@@ -39,7 +39,6 @@
 
 
 
-    <string name="email_subject" formatted="true">Just Java Order to<xliff:g example="Amy" id="name">%s</xliff:g></string>
-
+    <string name="email_subject">Just Java Order to</string>
 
 </resources>
