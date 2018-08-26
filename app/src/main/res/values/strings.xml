@@ -1,0 +1,45 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--look at the github code snippet to check how to correctly comment this file -->
+    <string name="app_name">Just Java</string>
+
+
+    <string name="whipped_cream"> whipped cream</string>
+
+
+    <string name="chocolate"> chocolate</string>
+
+
+    <string name="name_editext"> Name</string>
+
+
+    <!--Header text for the list of toppings [CHAR LIMIT = NO LIMIT] -->
+    <string name="topping_text_view"> toppings</string>
+
+
+    <string name="quantity_text_view"> quantity</string>
+
+
+    <string name="order_summary_text_view"> order summary</string>
+
+
+    <string name="order_summary_details_text_view" translatable="false"> $10</string>
+
+
+    <string name="order_button"> order</string>
+
+
+    <string name="thank_you"> Thank you</string>
+
+    <string name="whipped_cream_addition"> add Whipped Cream</string>
+
+    <string name="chocolate_addition"> add chocolate</string>
+
+    <string name="total"> Total</string>
+
+
+
+    <string name="email_subject" formatted="true">Just Java Order to<xliff:g example="Amy" id="name">%s</xliff:g></string>
+
+
+</resources>

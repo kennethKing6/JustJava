@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--look at the github code snippet to check how to correctly comment this file -->
+    <string name="app_name">Just Java</string>
+    <string name="chocolate">chocolat</string>
+    <string name="name_editext">nom</string>
+    <string name="topping_text_view">garnitures</string>
+    <string name="quantity_text_view">nombre</string>
+    <string name="order_summary_text_view">résumé</string>
+    <string name="whipped_cream">" crème "</string>
+    <string name="order_button">choix</string>
+    <string name="email_subject">just java commande pour</string>
+    <string name="thank_you">Merci a vous</string>
+    <string name="whipped_cream_addition"> de la crème</string>
+    <string name="chocolate_addition"> du chocolat</string>
+    <string name="total">la somme</string>
+</resources>
