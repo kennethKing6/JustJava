@@ -56,14 +56,11 @@ public class MainActivity extends AppCompatActivity {
 //      displays the Order Summary
         String priceMessage = createOrderSummary(price, stateOfWhippedCreamCheckBox, stateOfChocolateCheckBox, userName);
 
-
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"kennethemmanuel28@gmail.com"});
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         intent.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.email_subject),userName);
-
-
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
